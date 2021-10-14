@@ -1,13 +1,14 @@
 def welcome():
     while True:
         message = input("Enter a greeting: ")
+        message = message.upper()
         try:
-            if ((message == "Hi") or (message == "HI") or (message == "hi") or (message == "hI")):
-                print("Hello World!")
+            if ((message == "HI") or (message == "HI!")):
+                print("Hello World!\n")
             else:
                 raise Exception
         except:
-            print("Say hi")
+            print("Say hi.\n")
         else:
             break
 
